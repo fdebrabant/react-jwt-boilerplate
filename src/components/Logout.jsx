@@ -1,8 +1,10 @@
 import React from "react";
 
 const Logout = () => {
+  // suppression du jwt du localstorage
   const handleSubmit = () => {
-    // Your code here
+    localStorage.removeItem("TOKEN");
+    alert("Vous etes deconnecté");
   };
 
   return (

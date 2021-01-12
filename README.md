@@ -223,7 +223,7 @@ Le but de cette page est d'afficher la liste des utilisateurs.
 
 La première étape va être de récupérer le "TOKEN" stocké dans le _local storage_. Tu trouvera ton bonheur ici :[https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem](https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem).
 
-Ensuite, tu vas devoir modifier la fonction `useEffect` afin de faire un appel avec `axios` à la route `/users`. Cette route étant authentifiée par JWT, l'appel vas avoir besoin d'un **header** qui doit aura la forme suivante :
+Ensuite, tu vas devoir modifier la fonction `useEffect` afin de faire un appel avec `axios` à la route `/users`. Cette route étant authentifiée par JWT, l'appel vas avoir besoin d'un **header** qui doit avoir la forme suivante :
 
 ```js
 {
